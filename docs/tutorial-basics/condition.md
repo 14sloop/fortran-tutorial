@@ -22,7 +22,7 @@ do 整数型变量 = 起始值, 结束值
 enddo
 
 !!! 示例 1
-integer a(10)
+integer a(10), n
 do n = 1, 10      ! 计算 1，2，3，4，5，6，7，8，9，10
     a(n) = n
 enddo
@@ -34,13 +34,13 @@ do 整数型变量 = 初始值, 结束值, 步长
 enddo
 
 !!! 示例 2
-integer a(5)
+integer a(5), n
 do n = 1, 10, 2   ! 计算 1，3，5，7，9
     a(nint(n/2)) = n
 enddo
 
 !!! 示例 3
-integer a(5)
+integer a(5),n 
 do n = 10, 1, -2   ! 计算 10，8，6，4，2
     a(n/2) = n
 enddo
